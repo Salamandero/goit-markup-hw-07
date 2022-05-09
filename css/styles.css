@@ -5,6 +5,7 @@
   --accent-color: #2196f3;
   --white-text-color: #ffffff;
   --icon-color: #afb1b8;
+  --acitv-accent-color: #188ce8;
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -75,7 +76,7 @@ img {
 } 
 
 /*----------- Header -------- */
-.header {
+/* .header {
   border-bottom: 1px solid #ececec;
 }
 .header .container {
@@ -94,9 +95,7 @@ img {
 .nav-list > .item:not(:last-child) {
 margin-right: 50px;
 }
-/* .nav-list .nav-item + .nav-item{
-  margin-left: 50px;
-} */
+
 
 .header-logo {
   font-family: 'Raleway', sans-serif;
@@ -183,10 +182,10 @@ margin-right: 50px;
 .header-icon:hover,
 .header-icon:focus {
   color: var(--accent-color);
-}
+} */
 
 /* --------------Hero ---------- */
-.hero {
+/* .hero {
   max-width: 1600px;
   margin: 0 auto;
   padding: 200px 0;
@@ -235,11 +234,11 @@ margin-right: 50px;
 }
 .hero-btn:hover,
 .hero-btn:focus {
-  background: #188ce8;
-}
+  background: var(--acitv-accent-color);
+} */
 /* ------------Peculiarities------------- */
 
-.peculiarities{
+/* .peculiarities{
   padding-top: 94px;
 }
 .peculiarities-title {
@@ -281,9 +280,9 @@ justify-content: center;
   letter-spacing: 0.03em;
  
   color: var(--text-color);
-}
+} */
 /* ----------Work------------ */
-.work-title {
+/* .work-title {
   margin-bottom: 50px;
 
    font-size: 36px;
@@ -322,10 +321,10 @@ justify-content: center;
   
   color: var(--white-text-color);
   background: rgba(47, 48, 58, 0.8);
-}
+} */
 
 /* --------Team -------------*/
-.team {
+/* .team {
   background: #f5f4fa;
 }
 .team-title {
@@ -346,7 +345,6 @@ justify-content: center;
 .team-item{
     max-width: 270px;
     background: var(--white-text-color);
-    /* material shadow v1 */
     
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -415,10 +413,10 @@ transition: fill 250ms var(--timing-function);
 .social-list-link:hover .social-list-icon,
 .social-list-link:focus .social-list-icon{
   fill: var(--white-text-color);
-}
+} */
 
 /* ------- Customers --------- */
-
+/* 
 .customers-title{
   margin-bottom: 50px;
 
@@ -466,11 +464,11 @@ transition: fill 250ms var(--timing-function);
 .customers-link:hover .customers-icon,
 .customers-link:focus .customers-icon{
   fill: var(--accent-color);
-}
+} */
 
 /*-------------- PORTFOLIO.html ------------*/
 /*-------------- Projects ------------*/
-.filters-btn {
+/* .filters-btn {
   padding: 6px 22px;
 
   font-weight: 500;
@@ -554,7 +552,7 @@ transition: fill 250ms var(--timing-function);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
   0px 4px 4px rgba(0, 0, 0, 0.06),
   1px 4px 6px rgba(0, 0, 0, 0.16);
-}
+} */
 
 /* 
 .projects-list .item{
@@ -562,14 +560,14 @@ transition: fill 250ms var(--timing-function);
   margin-right: 30px;
   margin-bottom: 30px;
 }*/
-
+/* 
 .projects-list > .item:nth-child(3n){
   margin-right: 0;
 }
  
 .projects-list .item:nth-last-child(-n+3){
   margin-bottom: 0;
-}
+} */
 
 /* Альтернатива */
 /* 
@@ -579,7 +577,7 @@ transition: fill 250ms var(--timing-function);
 .projects-list .item:not(:nth-last-child(-n+3)) {
 margin-bottom: 30px;
 } */
-
+/* 
 .object > h3{
   margin-bottom: 4px;
 }
@@ -600,11 +598,11 @@ margin-bottom: 30px;
   padding: 20px 24px;
   border: 1px solid #eeeeee;
 border-top: none;
-}
+} */
 
 
 /* -------------Footer---------------- */
-footer {
+/* footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
@@ -788,14 +786,14 @@ transition: background 250ms var(--timing-function);
 }
 .footer-subscribe-btn:hover,
 .footer-subscribe-btn:focus{
-background: #188ce8;
+background: var(--acitv-accent-color);
 }
 .footer-subscribe-icon{
   margin-left: 10px;
-}
+} */
 
 /* --------- END FOOTER ---------- */
-.backdrop{ 
+/* .backdrop{ 
   position: fixed;
   top: 0;
   left: 0;
@@ -953,19 +951,19 @@ margin-right: 8.38PX;
  background-size: contain;
  background-origin: border-box;
  border-color: transparent;
-}
+} */
 /* При фокусі на кнопку чекбокса автоматично підхоплюється рамка 
 і подібно відображатиметься на нашій псевдорамці*/
 /* .contact-form-checkbox:focus + .contact-form-checkbox-label::before {
 outline: 1px solid var(--primary-text-color);
 } */
-.checkbox-agreement{
+/* .checkbox-agreement{
 color: var(--accent-color);
 transition: color 250ms var(--timing-function);
 }
 .checkbox-agreement:hover,
 .checkbox-agreement:focus{
-  color: #188ce8;
+  color: var(--acitv-accent-color);
 }
 
 .contact-form-submit{  
@@ -993,5 +991,5 @@ transition: color 250ms var(--timing-function);
 
 .contact-form-submit:hover,
 .contact-form-submit:focus {
-  background: #188ce8;
-}
+  background: var(--acitv-accent-color);
+} */
