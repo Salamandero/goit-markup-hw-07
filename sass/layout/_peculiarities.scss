@@ -2,7 +2,7 @@
     padding-top: 94px;
 }
 
-.peculiarities-title {
+.peculiarities__title {
     margin-top: 30px;
     margin-bottom: 10px;
 
@@ -15,20 +15,20 @@
     color: var(--primary-text-color);
 }
 
-.peculiarities-list {
+.peculiarities__list {
     display: flex;
     flex-wrap: wrap;
 }
 
-.peculiarities-item {
+.peculiarities__item {
     width: 270px;
 }
 
-.peculiarities-item:not(:last-child) {
+.peculiarities__item:not(:last-child) {
     margin-right: 30px;
 }
 
-.peculiarities-svg {
+.peculiarities__svg {
     display: flex;
     max-width: 270px;
     height: 120px;
@@ -39,7 +39,7 @@
     border-radius: 4px;
 }
 
-.peculiarities-text {
+.peculiarities__text {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;

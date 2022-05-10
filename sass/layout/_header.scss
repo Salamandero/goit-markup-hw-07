@@ -1,43 +1,25 @@
 .header {
     border-bottom: 1px solid #ececec;
+    .container {
+        display: flex;
+        align-items: center;
+    }
 }
 
-.header .container {
-    display: flex;
-    align-items: center;
-}
 
-.logo {
+.header-logo {
     margin-right: 93px;
 }
 
 .nav-list {
     display: flex;
-
+    &>.item:not(:last-child) {
+        margin-right: 50px;
+    }
 }
 
-.nav-list>.item:not(:last-child) {
-    margin-right: 50px;
-}
 
-/* .nav-list .nav-item + .nav-item{
-  margin-left: 50px;
-} */
-
-.header-logo {
-    font-family: var(--secondary-font-family);
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    color: var(--primary-text-color);
-}
-
-.header-logo-studio {
-    color: var(--accent-color);
-}
-
-.header-link {
+.nav-list__link {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -50,9 +32,13 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    &:hover,
+    &:focus{
+        color: var(--accent-color);
+    }
 }
 
-.nav-item>.current {
+.nav-list__item > .current {
     color: var(--accent-color);
 }
 
@@ -70,26 +56,18 @@
 }
 
 
-.header-link:hover,
-.header-link:focus,
-.header-mail:hover,
-.header-mail:focus,
-.header-tel:hover,
-.header-tel:focus {
-    color: var(--accent-color);
-
-}
-
 .header-contacts {
     display: flex;
     margin-left: auto;
 
     text-decoration: none;
+    &>.item:not(:last-child) {
+            margin-right: 50px;
+        }
 }
 
-.header-contacts>.item:not(:last-child) {
-    margin-right: 50px;
-}
+
+
 
 .header-mail,
 .header-tel {
@@ -105,8 +83,12 @@
     letter-spacing: 0.02em;
     color: var(--text-color);
     transition: color 250ms var(--timing-function);
-}
 
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
 .contacts-item:not(:last-child) {
     margin-right: 30px;
 }
@@ -116,9 +98,9 @@
     margin-right: 10px;
     align-items: center;
     fill: currentColor;
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
-.header-icon:hover,
-.header-icon:focus {
-    color: var(--accent-color);
-}

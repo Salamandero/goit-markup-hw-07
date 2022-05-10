@@ -235,7 +235,7 @@ margin-right: 50px;
 .hero-btn:hover,
 .hero-btn:focus {
   background: var(--acitv-accent-color);
-} */
+} 
 /* ------------Peculiarities------------- */
 
 /* .peculiarities{
@@ -489,6 +489,7 @@ transition: fill 250ms var(--timing-function);
 .filters-btn:focus {
   background: var(--accent-color);
 }
+
 .filters-btn:hover,
 .filters-btn:focus {
   color: var(--white-text-color);

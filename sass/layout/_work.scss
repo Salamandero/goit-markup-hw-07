@@ -1,4 +1,4 @@
-.work-title {
+.work__title {
     margin-bottom: 50px;
 
     font-size: 36px;
@@ -9,24 +9,23 @@
     color: var(--primary-text-color);
 }
 
-.work-list {
+.work__list {
     display: flex;
     flex-wrap: wrap;
 }
 
-.work-item:not(:nth-child(3n)) {
+.work__item:not(:nth-child(3n)) {
     margin-right: 30px;
 }
 
-.work-wrapper {
+.work__wrapper {
     position: relative;
+    img {
+            z-index: -1;
+        }
 }
 
-.work-wrapper img {
-    z-index: -1;
-}
-
-.work-wrapper-overlay {
+.work__wrapper-overlay {
     position: absolute;
     bottom: 0;
     left: 0;

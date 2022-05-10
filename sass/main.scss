@@ -4,8 +4,10 @@
 @import './base/common';
 @import './base/container';
 
-// @import './components/logo';
-// @import './components/modal-btn';
+@import './components/logo';
+@import './components/modal-btn';
+@import './components/_socials-list-link';
+@import './components/footer-social-list';
 @import './components/backdrop';
 @import './components/modal-window';
 @import './components/modal-form';

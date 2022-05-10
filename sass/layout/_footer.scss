@@ -2,28 +2,18 @@ footer {
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: #2f303a;
+    .container {
+            display: flex;
+            align-items: baseline;
+        }
 }
 
-footer .container {
-    display: flex;
-    align-items: baseline;
-}
 
-.footer-logo {
+.link-footer{
     display: block;
     margin-bottom: 20px;
-
-    font-family: var(--secondary-font-family);
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    color: var(--white-text-color);
 }
 
-.footer-logo-studio {
-    color: var(--accent-color);
-}
 
 
 .footer-map {
@@ -36,6 +26,10 @@ footer .container {
 
     color: var(--white-text-color);
     transition: color 250ms var(--timing-function);
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
 .footer-mail {
@@ -51,56 +45,18 @@ footer .container {
 
     color: rgba(255, 255, 255, 0.6);
     transition: color 250ms var(--timing-function);
-}
-
-.footer-map:hover,
-.footer-map:focus,
-.footer-mail:hover,
-.footer-mail:focus,
-.footer-tel:hover,
-.footer-tel:focus {
-    color: var(--accent-color);
+    
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
 .footer-address {
     margin-right: 70px;
 }
 
-.footer-social-list {
-    display: flex;
-}
 
-.footer-social-item:not(:last-child) {
-    margin-right: 10px;
-}
-
-.footer-social-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.1);
-
-    transition: background-color 250ms var(--timing-function);
-}
-
-.footer-social-icon {
-    fill: var(--white-text-color);
-    transition: fill 250ms var(--timing-function);
-}
-
-.footer-social-link:hover,
-.footer-social-link:focus {
-    background-color: var(--accent-color);
-}
-
-.footer-social-link:hover .footer-social-icon,
-.footer-social-link:focus .footer-social-icon {
-    fill: var(--white-text-color);
-}
 
 .footer-social-text {
     font-weight: 700;
@@ -150,21 +106,19 @@ footer .container {
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
+    &:hover {
+        border-color: var(--accent-color);
+    }
+
+    &::placeholder {
+        font-size: 16px;
+        line-height: 1.25;
+
+        letter-spacing: 0.03em;
+        background-color: transparent;
+        color: rgba(255, 255, 255, 0.6);
+    }
 }
-
-.footer-subscribe-email:hover {
-    border-color: var(--accent-color);
-}
-
-.footer-subscribe-email::placeholder {
-    font-size: 16px;
-    line-height: 1.25;
-
-    letter-spacing: 0.03em;
-    background-color: transparent;
-    color: rgba(255, 255, 255, 0.6);
-}
-
 
 .footer-subscribe-btn {
     width: 200px;
@@ -183,13 +137,12 @@ footer .container {
     background: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    transition: background 250ms var(--timing-function);
+    &:hover,
+    &:focus {
+        background: var(--acitv-accent-color);
+    }
 }
 
-.footer-subscribe-btn:hover,
-.footer-subscribe-btn:focus {
-    background: var(--acitv-accent-color);
-}
 
 .footer-subscribe-icon {
     margin-left: 10px;
