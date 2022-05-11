@@ -428,8 +428,8 @@ img {
   margin-right: 50px;
 }
 
-.header-mail,
-.header-tel {
+.header-contacts__mail,
+.header-contacts__tel {
   display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -443,24 +443,24 @@ img {
   transition: color 250ms var(--timing-function);
 }
 
-.header-mail:hover, .header-mail:focus,
-.header-tel:hover,
-.header-tel:focus {
+.header-contacts__mail:hover, .header-contacts__mail:focus,
+.header-contacts__tel:hover,
+.header-contacts__tel:focus {
   color: var(--accent-color);
 }
 
-.contacts-item:not(:last-child) {
+.header-contacts__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.header-icon {
+.header-contacts__icon {
   display: flex;
   margin-right: 10px;
   align-items: center;
   fill: currentColor;
 }
 
-.header-icon:hover, .header-icon:focus {
+.header-contacts__icon:hover, .header-contacts__icon:focus {
   color: var(--accent-color);
 }
 
