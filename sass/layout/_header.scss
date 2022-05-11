@@ -55,22 +55,19 @@
     background-color: var(--accent-color);
 }
 
-
 .header-contacts {
     display: flex;
     margin-left: auto;
 
     text-decoration: none;
+
     &>.item:not(:last-child) {
-            margin-right: 50px;
-        }
+        margin-right: 50px;
+    }
 }
 
-
-
-
-.header-mail,
-.header-tel {
+.header-contacts__mail,
+.header-contacts__tel {
     display: flex;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -89,11 +86,11 @@
         color: var(--accent-color);
     }
 }
-.contacts-item:not(:last-child) {
+.header-contacts__item:not(:last-child) {
     margin-right: 30px;
 }
 
-.header-icon {
+.header-contacts__icon {
     display: flex;
     margin-right: 10px;
     align-items: center;
